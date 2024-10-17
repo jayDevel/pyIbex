@@ -6,8 +6,8 @@
 #include "ibex_Ctc.h"
 #include <pybind11/pybind11.h>
 
-NAMESPACE_BEGIN(pybind11)
-NAMESPACE_BEGIN(detail)
+
+namespace pybind11 { namespace detail {
 
 using ibex::Vector;
 using ibex::Array;
@@ -78,7 +78,7 @@ public:
     }
 };
 
-NAMESPACE_END(detail)
-NAMESPACE_END(pybind11)
+}
+}
 
 #endif // __PYIBEX_TYPE_CASTER_H__
